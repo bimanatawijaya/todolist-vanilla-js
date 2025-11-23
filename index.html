@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <form action="" id="formData">
+            <div class="form-group">
+                <label for="">Input Taks</label>
+                <input type="text" name="listPekerjaan" placeholder="Input your task" id="listPekerjaan">
+            </div>
+            <div class="form-group">
+                <label for="">Input Description</label>
+                <textarea type="text" name="descPekerjaan" cols="38" rows="10" placeholder="Input your description task" id="descPekerjaan"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="">Tag</label>
+                <select name="tagPekerjaan" id="tagPekerjaan">
+                    <option value="new">New</option>
+                    <option value="ongoing">On Going</option>
+                    <option value="done">Done</option>
+                </select>
+            </div>
+
+            <div class="action">
+                <button type="button" id="btn1">Submit</button>
+                <button type="button" id="btn2">Update</button>
+                <button type="button" id="back" onclick="location.reload()">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="list_task">
+        <div class="item_list_judul">
+            <h2>To Do List</h2>
+        </div>
+        <div id="item_list_task"></div>
+
+        <div id="myModal" class="modal"></div>
+    </div>
+
+    <div class="pagination">
+        <div id="container-pagination"></div>
+        <div id="pagination-controls"></div>
+    </div>
+
+   <script src="main.js"></script>   
+</body>
+</html>
